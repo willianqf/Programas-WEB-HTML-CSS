@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Os Formulários</title>
+		<style type=text/css>
+			body{ /* Alter cor de fundo */
+				background-color:#eeeeff;
+			}
+			label{ /* Alterar cor das caixas ao selecionar */
+				color:#0000ee;
+				font-weight:bolder;
+			}
+			.butao{ /* Classe utilizada para marcar a cor das caixas de seleção */
+				background-color:blue;
+				color:white;
+				width:75px;
+				heigth:35px;
+				cursor:pointer;
+			}
+			input:hover, select:hover, textarea:hover{ /* Altera a borda enquanto o mouse estiver em cima */
+				border:2px solid red;
+			}
+			input:focus{  /*Quando a caixa estiver selecionado*/
+				background-color:gray
+			}
+		</style>
+	</head>
+
+	<body>
+		<form name="test" method="post" action="recebeu.html">
+			<label>Login: </label> <!-Coloca um campo para ser preenchido-->
+			<input type="text" name="fusca" size="10"/></br></br>
+			
+			<label>Senha: </label>
+			<input type="password" name="fusca1" size="10"/></br></br>
+			
+			<label>Voce é gay?</label></br> <!-Coloca elementos para ser selecionado: Pode ser selecionado todos-->
+			<input type="checkbox" name="fusca2" value="Sim"><label> Sim</label> 
+			<input type="checkbox" name="fusca2" value="Não"><label> Sim, certeza</label></br></br>
+			
+			<label>Voce é hétero?</label></br> <!-Coloca opções mas apenas 1 pode ser selecionada: Obs O nome tem de ser igual-->
+			<input type="radio" name="fusca3" value="Não"><label> Não</label> 
+			<input type="radio" name="fusca3" value="Sim"><label> Não, nem fudendo</label></br></br>
+			
+			<label>Escolhe um número</label> <!-Seleciona elementos dentro da caixa-->
+			<select name="fusca4">
+				<option value="um">1</option>
+				<option value="dois">2</option>
+				<option value="tres">3</option>
+				<option value="quatro">4</option>
+
+			</select></br></br>
+
+			<label>Comentário<label></br></br> <!-Campo de preenchimento maior assim como o campo comum-->
+			<textarea name="fusca5" cols="50" rows="20"></textarea>
+
+			</br></br><input class="butao" type="submit" value="Pronto"/>
+			</br></br><input type="reset" value="Resetar"/> <!-Limpa os campos-->
+			</br></br><input type="button" value="Faz nada"/> 			
+		</form>
+	</body>
+
+</html>

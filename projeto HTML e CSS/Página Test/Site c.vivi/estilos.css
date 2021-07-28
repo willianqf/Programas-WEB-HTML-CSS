@@ -1,0 +1,83 @@
+body{
+	background-image:url(imag/img-fundo.png);
+	background-repeat:repeat-x;
+	top:0px;
+	left:0px;
+}
+#logo{
+	position:absolute;
+	top:15px;
+	left:15px;
+}
+#mol1{
+	position:absolute;
+	top:60px;
+	left:730px;
+}
+#mol{
+	position:absolute;
+	top:60px;
+	left:530px;
+}
+#mol2{
+	position:absolute;
+	top:60px;
+	left:920px;
+}
+#mol3{
+	position:absolute;
+	top:55px;
+	left:1465px;
+}
+#banner{
+	position:absolute;
+	top:200px;;
+	left:390px;
+}
+#banner2{
+	position:absolute;
+	top:700px;
+	left:470px;
+}
+#banner3{
+	position:absolute;
+	top:950px;
+	left:150px;
+}
+#banner4{
+	position:fixed;
+	top:220px;
+	left:1200px;
+}
+#inst{
+	position:absolute;
+	top:160px;
+	left:35%;
+	color:#000000;
+}
+.menul{
+	text-decoration:none;
+	color:grey;
+	font-family:arial;
+	font-size:18px;
+	font-weight:bold;
+}
+.pesq:hover{
+	border:0px solid; zoom:135%;
+}
+a:hover{
+	text-decoration:none;
+	color:#191970;
+	border:0px solid size; zoom:105%;
+}
+.form{
+	color:#ffffff;
+	top:500px;
+}
+#cab{
+
+}
+#inst2{
+	top:40px;
+	left:55%;
+}

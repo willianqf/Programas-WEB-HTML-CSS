@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Testando Array</title>
+		<script languagem="javascript">
+
+			function relogio(){
+				var relog = new Date();
+				var hora = relog.getHours();
+				var min = relog.getMinutes();
+				var seg = relog.getSeconds();
+				if(hora < 10){
+					hora="0"+relog.getHours();
+				}
+				if(min < 10){
+					min="0"+relog.getMinutes();
+				}
+				if(seg < 10){
+					seg ="0"+relog.getSeconds();
+				}
+				var impHoras=hora+":"+min+":"+seg;
+				document.frel.rel.value=impHoras;
+				setTimeout("relogio()",1000);
+			}
+
+			var data = new Date();
+			var meses =new Array("Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dec");
+			var dias = new Array("Seg","Ter","Qua","Qui","Sex","Sab","Dom");
+
+			document.write(dias[data.getDay()]+", ");
+			document.write(data.getDate()+" de ");
+			document.write(meses[data.getMonth()]+" de ");
+			document.write(data.getFullYear()+" ");
+
+			document.write("<br>");
+			relogio();
+			
+
+
+
+		</script>
+	</head>
+
+	<body onload="relogio()">
+		<form name="rel">
+			<input type="text" name="rel" size="10"/>
+		</form>
+	</body:
+
+</html>
