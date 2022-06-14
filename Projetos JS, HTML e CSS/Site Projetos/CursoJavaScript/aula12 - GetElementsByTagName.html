@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Tag 1</p>
+    <p>Tag 2</p>
+    <p>Tag 3</p>
+    <p>Tag 4</p>
+    <p>Tag 5</p>
+
+    <hr>
+
+    <script>
+        var tags = document.getElementsByTagName('p'); /* Retorna um conjunto de ARRAY com os elementos */
+        var todoselementos= document.getElementsByTagName('*'); /* Retorna todas as tags do HTML */
+        console.log(tags);
+        tags[0].innerHTML = 'Tag 1 - Modificada';
+        for(var x = 0; x < todoselementos.length; x++)
+        {
+            if(todoselementos[x].localName == 'p')
+            {
+                todoselementos[x].innerHTML = 'Tag '+x+' - Modificada por For';
+            }
+        }
+        console.log(todoselementos);
+        //todoselementos[0].innerHTML = 'Tag '+(x+1)+' - Modificada por For';
+
+    </script>
+</body>
+</html>

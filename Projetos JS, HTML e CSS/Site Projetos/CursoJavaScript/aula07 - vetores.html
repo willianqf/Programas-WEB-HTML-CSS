@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vetor = new Array();
+        var vetor2 = [];
+        var vetor3 = [5,1,6,8,2,4,9,3,7];
+        var numeros;
+
+        vetor3.sort(); /* ordena os elementos em ordem crescente */
+        vetor3.reverse(); /* inverte a ordem dos elementos */
+        numeros = vetor3.join(); /* copia elementos de uma array */
+        vetor = vetor3.concat(vetor2); /* Copia elementos dos 2 arrays */
+
+        vetor2.push('Amor'); /* push - adiciona elementos no final do array */
+        vetor2.push('França');
+        vetor2.push('Barril');
+        vetor2.push('Barril2');
+        vetor2.push('Barril23');
+        vetor2.push('Barril245');
+        vetor2.push('Barril341');
+        vetor2.unshift('Tiroteio'); /* unshift - adiciona elemento no inicio do array */
+
+        vetor.push('Agua');
+        vetor.push('Fogo');
+        vetor.push('Terra');
+
+        vetor2.pop(); /*pop - retira o ultimo elemento do array */
+        vetor2.shift(); /*shift - retira o primeiro elemento do array */
+
+        /* splice - remove itens do vetor .splice('indice', 'diante'); */
+        vetor2.splice(2, 5);
+
+        var valor = vetor.indexOf('Fogo'); /* verifica se existe elemento dentro do vetor e retorna a posição dele ou -1 se não existe */
+        var valor2 = vetor.length; /* retorna o tamanho do vetor */
+
+        console.log(valor2); 
+    </script>
+</body>
+</html>

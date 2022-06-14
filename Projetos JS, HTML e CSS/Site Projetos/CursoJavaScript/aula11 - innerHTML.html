@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="texto"> Digite alguma coisa </p>
+    <input type="text" id="caixa" value="">
+    <button id="butao" type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+    Ok
+    </button>
+    
+    <script>
+
+        const texto = document.getElementById('texto');
+        const caixa = document.getElementById('caixa');
+        const botao = document.getElementById('butao');
+
+        botao.addEventListener('click', clicou);
+        alert(texto.innerHTML);
+        texto.innerHTML = 'Não existe mais nada agora';
+
+        // .innerHTML -> retorna o valor dentro das tags <p>'valor'</p>
+    </script>
+</body>
+</html>

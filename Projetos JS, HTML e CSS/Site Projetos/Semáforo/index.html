@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+    <title>Site de <Mini-Projetos></Mini-Projetos></title>
+  </head>
+  <body>
+  <header>
+  <div class="bg-dark collapse" id="navbarHeader" style="">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Grupo Desenvolvedor WEB </h4>
+          <p class="text-muted">Aqui você pode cadastrar seus dados, acessar arquivos HTML/CSS e JavaScript e projetos desenvolvidos para iniciantes com o objetivo de ensinar ao leitor uma breve programação inicial. Você pode utilizar desses projetos para o desenvolvimento dos seus próprios projetos</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contate a gente! ;)</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Em breve</a></li>
+            <li><a href="#" class="text-white">Feito por Willian Quirino</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+        <strong>Projetos de Programação WEB</strong>
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class = "jumbotron">
+                  <!-- ////////////////NOME DO PROJETO////////////////////////// -->
+	                <br><h2 class="display-4">Projeto Semáforo</h1>
+	                <p class="lead"></>
+	                <hr class="my-4">
+                  <!--//////////////////////////////// PUT HERE  //////////////////////////////////////////////-->
+                  
+                  <main>
+                    <div style="text-align:center">
+                        <img src="./img/desligado.png" alt="desligado" id="img">
+                    </div>
+                    <div id="buttons" style="text-align:center">
+                        <button id="red" class="button">Vermelho</button>
+                        <button id="yellow" class="button">Amarelo</button>
+                        <button id="green" class="button">Verde</button>
+                        <button id="automatic" class="button">Automático</button>
+                    </div>
+                    </main>
+                    <script src="./semaforo.js"></script>
+                    
+
+                  <!--//////////////////////////////// PUT HERE  //////////////////////////////////////////////-->
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+   
+  <!-- Main Body -->
+  <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-5 col-md-6 col-12 pb-4">
+                <!-- ////// GERAR CONTADOR DE COMENTÁRIOS ///////-->
+                  <h2>2 Comentários</h2>
+                  <!-- DIVS DE COMENTÁRIOS (ESSA PARTE PODE INTRODUZIR AUTOMATIZAÇÃO DOS COMENTÁRIOS DO BANCO)-->
+                  <!--
+                    EXEMPLOS DIVs DE COMENTÁRIOS
+                  -->
+
+                  <div class="text-justify darker mt-4 float-right"  style="width: 650px;" >
+                      <h4>Jô Soares</h4> <!-- NOME DA PESSOA -->
+                      <span>- 21 de Fevereiro, 2022</span> <!-- DATA DA POSTAGEM -->
+                      <br>
+                      <!-- Comentário -->
+                      <p>Tudo pode se transformar nasdewqaquele que tudo vê nas possibilidade da vida no qual a vida se estabelece</p>
+                  </div>
+
+
+                  <div class="text-justify darker mt-4 float-right" style="width: 650px;" >
+                    <h4>Luke Skywaker</h4> <!-- NOME DA PESSOA -->
+                    <span>- 22 de Fevereiro, 2022</span> <!-- DATA DA POSTAGEM -->
+                    <!-- Comentário -->
+                    <p>Tá tudo preto a tela. Um projeto que não funciona isso é inadmissível!!!! NUM FUNCIONA</p>
+                  </div>
+
+              </div>
+
+              <!-- ///////////////////////// INSERT COMMENTS  //////////////////////////////////////////////-->
+              <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
+                  <form id="algin-form">
+                      <div class="form-group">
+                          <h4>Deixe um comentário</h4>
+                          <label for="message">Mensagem</label>
+                          <textarea name="msg" id=""msg cols="30" rows="5" class="form-control" style="background-color: white;"></textarea>
+                      </div>
+                      <div class="form-group">
+                          <label for="name">Seu nome</label>
+                          <!-- INPUT PARA PEGAR O NOME DA PESSOA -->
+                          <input type="text" name="name" id="fullname" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Seu Email</label>
+                          <!-- INPUT PARA PEGAR O EMAIL DA PESSOA -->
+                          <input type="text" name="email" id="email" class="form-control">
+                      </div>
+                      <div class="form-group">
+                          <p class="text-secondary">Ao enviar a mensagem você concorda com os termos de privacidade deste site.</p>
+                      </div>
+                      <div class="form-inline">
+                          <input type="checkbox" name="check" id="checkbx" class="mr-1">
+                          <label for="subscribe">Concordo</label>
+                      </div>
+                      <div class="form-group">
+                          <!-- BOTÃO DE ENVIAR TEXTO-->
+                          <button type="button" id="post" class="btn">Postar Comentário</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

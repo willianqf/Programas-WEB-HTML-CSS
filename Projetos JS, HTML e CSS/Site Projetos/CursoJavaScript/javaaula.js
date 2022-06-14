@@ -1,0 +1,1 @@
+document.getElementById('texto').style.color="#995522";
