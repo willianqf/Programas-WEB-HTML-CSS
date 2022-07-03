@@ -32,7 +32,7 @@
   </div>
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container">
-      <a href="javascript:history.back()" class="navbar-brand d-flex align-items-center">
+      <a href="#" class="navbar-brand d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
         <strong>Projetos de Programação WEB</strong>
       </a>
@@ -47,23 +47,25 @@
             <div class="col">
                 <div class = "jumbotron">
                   <!-- ////////////////NOME DO PROJETO////////////////////////// -->
-	                <br><h2 class="display-4">Projeto LÂMPADA</h2>
+	                <br><h2 class="display-4">Projeto Mario Game</h2>
 	                <p class="lead"></>
 	                <hr class="my-4">
                   <!--//////////////////////////////// PUT HERE  //////////////////////////////////////////////-->
-                  <div class="lampadaheader" style="text-align: center;">
-                    <h2>VANILLA JS</h2>
-                  </div>
-              
-                  <div class="lampada" style="text-align: center;">
-                      <div>
-                          <img src="./img/desligada.jpg" alt="Lâmpada" id="lamp">
-                      </div>
-                      <div>
-                          <button id="turnOn">Ligar</button>
-                          <button id="turnOff">Desligar</button>
-                      </div>
-                  </div>
+                    <div class="game-board">
+                        <div style="text-align: center;">
+                            <h2 id="score">Score : 0</h2>
+                            <!-- <button  type="button" class="btn btn-primary">Reiniciar</button> -->
+                        </div>
+                        <!-- <button id="reiniciar" type="button" class="btn btn-primary">Reiniciar</button> -->
+                        <div id = 'botao' class="botao" style="text-align: center;">
+                          <button id="pular" type="button" class="btn btn-dark" style="width: 150px;"">Pular</button>
+                        </div>
+      
+                        <img src="img/clouds.png" class="nuvem">
+                        <img src="img/mario.gif" class="mario">
+                        <img src="img/pipe.png" class="pipe">
+                    </div>
+                    <script src="script.js"></script>
                   <!--//////////////////////////////// PUT HERE  //////////////////////////////////////////////-->
                   </div>
             </div>
@@ -78,43 +80,20 @@
         <div class="row">
             <div class="col-sm-5 col-md-6 col-12 pb-4">
               <!-- ////// GERAR CONTADOR DE COMENTÁRIOS ///////-->
-                <h2>4 Comentários</h2>
+                <h2>1 Comentários</h2>
                 <!-- DIVS DE COMENTÁRIOS (ESSA PARTE PODE INTRODUZIR AUTOMATIZAÇÃO DOS COMENTÁRIOS DO BANCO)-->
                 <!--
                   EXEMPLOS DE COMENTÁRIOS
                 -->
 
                 <div class="text-justify darker mt-4 float-right"  style="width: 650px;" >
-                    <h4>Jô Soares</h4> <!-- NOME DA PESSOA -->
+                    <h4>Anderson da Silva</h4> <!-- NOME DA PESSOA -->
                     <span>- 21 de Fevereiro, 2022</span> <!-- DATA DA POSTAGEM -->
                     <br>
                     <!-- Comentário -->
-                    <p>Tudo pode se transformar nasdewqaquele que tudo vê nas possibilidade da vida no qual a vida se estabelece</p>
+                    <p>Eu quero aprender. Tem como vocês postarem um vídeo de como montar um joguinho com CSS? </p>
                 </div>
 
-
-                <div class="text-justify darker mt-4 float-right" style="width: 650px;" >
-                  <h4>Luke Skywaker</h4> <!-- NOME DA PESSOA -->
-                  <span>- 22 de Fevereiro, 2022</span> <!-- DATA DA POSTAGEM -->
-                  <!-- Comentário -->
-                  <p>Tá tudo preto a tela. Um projeto que não funciona isso é inadmissível!!!! NUM FUNCIONA</p>
-                </div>
-
-                
-                <div class="text-justify darker mt-4 float-right" style="width: 650px;" >
-                  <h4>Teste apenas</h4> <!-- NOME DA PESSOA -->
-                  <span>- 22 de Fevereiro, 2022</span> <!-- DATA DA POSTAGEM -->
-                  <!-- Comentário -->
-                  <p>Isso aqui tá uma bosta!</p>
-                </div>
-
-                
-                <div class="text-justify darker mt-4 float-right" style="width: 650px;" >
-                  <h4>Outro Teste</h4> <!-- NOME DA PESSOA -->
-                  <span>- 23 de Fevereiro, 2022</span> <!-- DATA DA POSTAGEM -->
-                  <!-- Comentário -->
-                  <p>Corrigindo: Não precisa de comentários entre esses elementos, engloba o select em um div tbm e já era, dae vc tbm aplica um css de margin-top nesse div com o Kaic sugeriu ai em cima</p>
-                </div>
 
             </div>
             
@@ -164,3 +143,26 @@
     -->
   </body>
 </html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="game-board">
+        <div style="text-align: center;">
+            <h2 id="score">Score : 0</h2>
+        </div>
+        <img src="/img/clouds.png" class="nuvem">
+        <img src="/img/mario.gif" class="mario">
+        <img src="/img/pipe.png" class="pipe">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+-->

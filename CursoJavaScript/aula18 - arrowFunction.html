@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Arrow Function = Função de seta
+        // const 'variavel' = (parâmetros) => {instruções}
+        const soma = (p1, p2) => {
+            return p1 + p2
+        }
+
+        const somavalores = (...num) =>
+        {
+            let r = 0
+            for(n of num)
+            {
+                r+=n
+            }
+            return r
+        }
+
+        const parimpar = (valor) =>
+        {
+            return valor % 2 == 0 ? true : false
+        }
+        console.log(soma(5,2))
+        console.log(somavalores(5,3,5,6,7,8,9))
+        console.log(parimpar(6) ? 'É par' : 'É impar')
+    </script>
+</body>
+</html>

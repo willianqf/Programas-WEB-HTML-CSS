@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .div2{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            position: absolute;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body id = "tester2" onload="PaginaCarregada()">
+    <div id="tester" class="div2" onmouseover="mudacor(this, '#f00')" onmouseleave="returnColor(this)">
+        
+    </div>
+    <br>
+    <div style="position: none;">
+        <button id="tester3" type="button" onclick="alert('safe')" onmouseover="mudacor(this, '#f00'), mudacor(document.getElementById('tester'), 'blue')" onmouseleave="returnColor(this), mudacor(document.getElementById('tester'), 'white')">Click Aqui</button>
+    </div>
+
+    <script>
+        var globalCor;
+        function mudacor(obj, cor)
+        {
+            globalCor = obj.style.backgroundColor;
+            obj.style.backgroundColor = cor;
+        }
+
+        function returnColor(obj)
+        {
+            obj.style.backgroundColor = globalCor;
+        }
+
+        function PaginaCarregada()
+        {
+            alert("A página foi carregada");
+        }
+
+        function EventoAdicionado()
+        {
+            alert('A página foi carregada via script');
+        }
+
+        //////// ADICIONANDO e EXCLUINDO EVENTOS PELO JAVASCRIPT ///////////////
+
+        var button = document.getElementById('tester3').addEventListener("click", EventoAdicionado);
+        document.getElementById('tester2').addEventListener("mouseleave", EventoAdicionado);
+
+        document.getElementById('tester2').removeEventListener("mouseleave", EventoAdicionado);
+
+        /////////////////// EVENTOS DE KEYDOWN //////////////////////////////////////////
+        var px = 0;
+        var py = 0;
+
+        document.addEventListener("keydown", function(evento){
+            var obj = document.getElementById('tester');
+            var teclado = evento.keyCode;
+            //37 - esquerda / 38 - cima  / 39 - direita / 40 - baixo//
+            switch(teclado)
+            {
+                case 37:
+                    px-=10;
+                    obj.style.left = px+"px";
+                    break;
+                case 38:
+                    py-=10;
+                    obj.style.top= py+"px";
+                    break;
+                case 39:
+                    px+=10;
+                    obj.style.left = px+"px";
+                    break;
+                case 40:
+                    py+=10;
+                    obj.style.top= py+"px";
+                    break;
+            }
+        })
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>                                                                                                                                                                          
+        var valor = 0;
+        function chamar1()
+        {
+            valor++;
+            console.log('Chamando 1 - '+valor);
+        }
+
+        function chamar2()
+        {
+            valor++;
+            console.log('Chamando 2 - '+valor);
+        }
+
+        setTimeout(chamar1, 1000); /// CHAMA UMA VEZ - (funcao, 'tempo para chamar');
+        var Inter = setInterval(chamar2, 1000); /// CHAMA A CADA TEMPO ESPECIFICADO 
+
+        clearInterval(Inter); // ENCERRA O INTERVALO 
+
+    </script>
+</body>
+</html>

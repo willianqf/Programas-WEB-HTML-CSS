@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        label{
+            display: block;
+        }
+        input{
+            display: block;
+        }
+        input[type=submit],label{
+            margin-top: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id = "formulario1" method="post">
+        <label>Seu nome</label>
+        <input type="text" id="nome" value="Primeiro">
+        <label>Sua senha</label>
+        <input type="password" id="senha" value="">
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+    <form action="" id = "formulario2" method="post">
+        <label>Seu nome</label>
+        <input type="text" id="nome2" value="Segundo">
+        <label>Sua senha</label>
+        <input type="password" id="senha2" value="">
+        <input type="submit" name="enviar2" value="Enviar">
+    </form>
+    <hr>
+
+    <script>
+
+       var x = document.forms.length;
+       var x1 = document.forms[0].id;
+       var x2 = document.forms.item(0).id;
+       var x3 = document.forms["formulario1"].elements[0].value;
+       console.log(x3);
+
+       ///////// TRABALHANDO COM DATA ///////////////////
+       
+       var meses = new Array('Jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez');
+       var meses1 = [
+       'Jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'
+       ]
+        var dt = new Date(); //Ano, Mes, Dia, Hora, Min, Seg, Mili
+       document.write(meses1[dt.getMonth()]);
+
+    </script>
+</body>
+</html>

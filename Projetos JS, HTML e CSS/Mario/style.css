@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 45px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid green;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animacao 1.5s infinite linear;
+}
+
+.mario{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.gameover{
+    width: 80px;
+    position: absolute;
+    bottom: -50%;
+    animation: game-over 1000ms ease-out;
+}
+
+.jump{
+    animation: mario-pulo 500ms ease-out;
+}
+
+.nuvem{
+    position: absolute;
+    width: 550px;
+    animation: nuvem-anim 20s infinite linear;
+}
+
+@keyframes pipe-animacao {
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes mario-pulo {
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes game-over{
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 50%;
+    }
+    60%{
+        bottom: 50%;
+    }
+    100%{
+        bottom: -50%;
+    }
+}
+
+@keyframes nuvem-anim {
+    from{
+        right: -550px;
+    }
+    to{
+        right: 100%;
+    }    
+}

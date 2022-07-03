@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+<!-- //////////////// BARRA DE NAVEGAÇÃO //////////////////////////////  -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+            <!-- EXEMPLO DE SNIPPET DE NAVEGAÇÃO -->
+            <!--          INTRO                  -->
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                        <span class="title">Jobs Events</span>
+                    </a>
+                </li>
+            <!--/////////////////////////////////-->
+            <!-- HOME -->
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+            <!--/////////////////////////////////-->
+            <!-- Minhas Configurações -->
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="construct-outline"></ion-icon></span>
+                        <span class="title">Minhas Configurações</span>
+                    </a>
+                </li>
+            <!--/////////////////////////////////-->
+            <!-- EVENTOS -->
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="calendar-number-outline"></ion-icon></span>
+                        <span class="title">Eventos</span>
+                    </a>
+                </li>
+            <!--/////////////////////////////////-->
+            <!-- SAIR -->
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            <!--/////////////////////////////////-->
+            </ul>
+        </div>
+
+   </div>
+<!-- ///////////////////////////////////////////////////////////////////     -->
+
+<!-- //////////////// MAIN E CORPO  //////////////////////////////  -->
+    <div class="main">
+        <div class="topbar">
+
+            <div class="toggle" style="color: white;">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <!-- ALA DE PESQUISAR -->
+            <div class="search">
+                <label for="">
+                    <input type="text" placeholder="Pesquisar Eventos">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+
+            <!-- USER LOGADO (CARREGAR IMAGEM DA PESSOA SE TIVER OU SÓ LETRAS)-->
+            <div class="user">
+                <img src="usuario.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- ///////////////////////////////////////////////////////////////////     -->
+<!-- ////////////////////////// CORPO //////////////////////////////////////-->
+
+<!-- MODULOS DE SCRIPTS -->
+<!-- ICONS SCRIPS -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- SCRIPT NECESSÁRIO -->
+<script src="dashboard.js"></script>
+</body>
+</html>

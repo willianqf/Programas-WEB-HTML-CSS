@@ -19,6 +19,9 @@
         a{
             display: block;
         }
+        .quadro{
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
@@ -26,9 +29,18 @@
     <p>Retorna elementos de HTML que correspondem ao CSS ou tag específica</p>
     <h2 class="titulo">Coisas estranhas</h2>
     <div class="coisas">
+        <h2>Java Script</h2>
         <p>Muitas coisas loucas aqui</p>
         <p>Ninguém sabe o que a gente pode faxzer</p>
     </div>
+
+    <div class="quadro">
+        <h3>Java Script</h3>
+        <p>Muitas coisas loucas aqui</p>
+        <p>Ninguém sabe o que a gente pode faxzer</p>
+    </div>
+
+    <div class="coisas">VUEI</div>
     <a href="http://google.com">Entrar no Google</a>
     <a href="http://globo.com">Lado Negro da Força</a>
 
@@ -38,7 +50,14 @@
     <script>
         
         var ps = document.querySelectorAll(".titulo"); /* Retorna elementos de HTML que correspondem ao CSS ou tag específica */
+        var test1 = document.querySelectorAll("div.quadro > *"); /* Retorna todos os elementos dentro da div que contem <p> */
+        var test2 = document.querySelectorAll("p, h2");
+        console.log(test1);
         console.log(ps);
+        for(var x = 0; x < test1.length;x++)
+        {
+            document.write(test2[x].style.color='orange');
+        }
 
     </script>
 </body>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .tester{
+            border: 1px solid;
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+            position: relative;
+        }
+        .tester2{
+            border: 1px solid;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="tester" class="tester">
+
+    </div>
+    <div id="tester2" class="tester2">
+
+    </div>
+
+    <script>
+        /*
+            setAttribute -> Muda o atributo de uma tag do html
+            hasAttribute -> 
+            removeAtributte -> Remove um atributo de uma tag do html
+        */
+       // Remove atributo //
+        document.getElementById('tester').removeAttribute('class');
+        // Muda o valor de um atributo (Qual atributo, 'novo valor') //
+        document.getElementById('tester2').setAttribute('class', 'tester')
+        // verifica se existe o atributo //
+
+        if(document.getElementById('tester').hasAttribute('class'))
+        {
+            document.write('existe o atributo');
+        }
+        else
+        {
+            document.write('não existe o atributo');
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////
+        let texto = 'Marcos aula vinicios aula';
+        let res = texto.match(/aula/ig); //*Procura a quantidade de palavras //
+        res = texto.match(/[oa]/ig); //Procura letras específicas //
+        console.log(res);
+        res = texto.match(/\w/ig);
+        console.log(res);
+        res = texto.match('aula'); // Procura a palavra determinada //
+        console.log(res);
+        document.write("<br>Valor = "+res);
+       
+        document.write("<br>"+res.length/*retorna a quantidade de palavras encontradas */);
+    </script>
+</body>
+</html>
