@@ -1,0 +1,73 @@
+.info{
+    background-color: aliceblue; /* Cor de fundo*/
+    color: aqua; /* Cor do texto */
+    padding: 20px; /* Espaçamento */
+    font-family: Arial; /* Formatação de texto */
+    font-family: Georgia; /* Fonte serifada */
+    font-family: Helvetica; /* Fonte não serifada */
+    font-family:'Courier New'; /* Fonte Monoespaçada */
+    font-size: 20px; /* Tamanho da fonte */
+    padding-bottom: 500px; /* cria scroll na página */
+    font-weight: 700; /* Definir grossura da fonte */
+    font-style: italic; /* Define estilo da fonte */
+    width: 200px; /* largura */
+    height: 200px; /* altura */
+    border: 1px solid blue; /* bordas em torno */
+    text-align: center; /* Alinhar texto (left center right) */
+    text-transform: lowercase; /* Formata as letras para minusculas */
+    text-transform: uppercase; /* Formata as letras para maiusculas */
+    line-height: 40px; /* Aumenta a altura entre linhas */
+    letter-spacing: 5px; /* espaçamento entre as letras */
+    text-decoration: none; /* tira a decoração de click em liks */
+    list-style: none; /* tira os numeros ou pontos das listas */
+    display: inline-block; /*define as divs em pilhas */
+    display: block; /* define as divs em fila */
+    position: fixed; /* o elemento fica fixo na tela mesmo rolando o scroll*/
+    left: 0; /* distancia do elemento corelação a largura tela */
+    top: 0; /* distancia do elemento corelação a topo tela */
+}
+
+.link:visited{
+    transition: 0.5s; /*transitar para um style e outro */
+    color: green;
+}
+
+.link:hover
+{
+    transition: 0.5s; /*transitar para um style e outro */
+    background-color: black;
+    color:aqua;
+}
+
+.link{
+    transition: 0.5s; /*transitar para um style e outro */
+    background-color: red; /* Cor de fundo */
+    border: 3px solid green; /* 'largura da borda'.  'Solida' 'cor da borda' */
+    border-radius: 10px; /* 'Bordas nos cantos '*/
+    color: aliceblue; /* Cor de texto */
+    text-decoration: none; /* */
+    display: block; /* Tomar a linha para ele  */
+    width: 120px; /* Largura */
+    padding: 12px 7px; /* espaçamento (altura, largura)*/
+    text-align: center; /* Alinhar objeto ao centro */
+}
+
+a p:first-child{
+    color: chartreuse;
+}
+
+a p:nth-child(3)
+{
+    color: black;
+}
+
+a p::first-letter
+{
+    color: aquamarine;
+    font-size: 35px;
+}
+
+h2
+{
+    color: blue !important;
+}
